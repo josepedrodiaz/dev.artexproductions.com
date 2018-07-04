@@ -17,12 +17,14 @@ $para= wp_get_attachment_image_src( $para, "bgpara" );
 
 
 	
-	<div class="about-section" id="about" style="background-image: url(/wp-content/themes/1-7-5/img/bkg_about.jpg); background-size: cover;">
-		<div class="container">
+	<div class="about-section" id="about">
+		<div class="container"  style="background-image: url(/wp-content/themes/1-7-5/img/bkg_about.jpg); background-repeat:no-repeat;
+background-size:100%;
+background-position:top center;">
 			<div class="cols">
 				<?php //the_field("about_content") ?>
 					<div class="referalls">
-				<div class="container">
+				<div class="">
 					<div class="title">
 						<?php the_field("about_content") ?>
 					</div>
