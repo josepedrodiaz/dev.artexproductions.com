@@ -18,7 +18,7 @@ $para= wp_get_attachment_image_src( $para, "bgpara" );
 
 	
 	<div class="about-section" id="about">
-		<div class="container"  style="background-image: url(/wp-content/themes/1-7-5/img/bkg_about.jpg); background-repeat:no-repeat;
+		<div class="container"  style="background-image: url(<?php the_field("background_image_for_referrals") ?>); background-repeat:no-repeat;
 background-size:100%;
 background-position:top center;">
 			<div class="cols">
@@ -42,7 +42,8 @@ background-position:top center;">
 									<?php $i = 1; while ( $wp_query->have_posts() && $i < 7) : $wp_query->the_post(); ?>
 
 															<div class="item">
-																<blockquote>
+																<blockquote>																	
+																	<?php the_field("title") ?>																	
 																	<?php the_content(); ?>
 																	<?php the_post_thumbnail("referral"); ?>
 																	<cite>- <?php the_title(); ?> <span><?php echo get_the_excerpt(); ?></span></cite>
