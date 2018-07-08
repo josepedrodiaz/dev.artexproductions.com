@@ -1182,10 +1182,11 @@ nav#menu.home-top {
     line-height: 24px;
 }
 #about .title{
-    width: 58%;
-    padding-right: 300px;
-    padding-top: 90px;
+    width: 40vw;
+    padding-top: 80px;
     text-align: left;
+    margin-right: 10vw;
+    padding-right: 12vw; 
 }
 
 .about-section .container {
@@ -1311,14 +1312,14 @@ nav#menu.home-top {
     }
 
     .about-section h3 {
-        font-size: 44px;
+        font-size: 45px;
         color: #fff;
         font-weight: 700;
         line-height: 55px;
-        padding: 5px 0 14px;
+        padding: 5px 50px 14px 0;
         font-family: "Roboto";
         text-transform: uppercase;
-        letter-spacing: 3px;
+        letter-spacing: 1px;
     }
 
     .title {
@@ -1758,7 +1759,6 @@ nav#menu.home-top {
 
     .referalls .slider {
         position: relative;
-        margin-left: -67px;
         overflow: hidden;
     }
 
@@ -6110,6 +6110,7 @@ div.search input {
         margin-left: 50px;
         margin-bottom: 20px;
         padding-right: 3px;
+        overflow: hidden;
     }
     .clients .items {
         margin: 0 -20px;
@@ -7656,9 +7657,11 @@ a .selectorText {
 
 
 
+/*
+South Concept updates
+*/
 
-
-
+/*medium display*/
 @media only screen and (max-width: 1060px) and (min-width: 768px)  {
 .referalls .title{
     width: 80% !important;
@@ -7680,4 +7683,18 @@ a .selectorText {
     font-size: 14px;
     line-height: 14px;
 }
+}
+
+
+/* Referrals */
+#about .referalls .item blockquote h4{
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 30px;
+    line-height: 60px;
+    margin-top: 31px;
+}
+#about .referalls .item blockquote p{
+    font-size: 15px;
+    color: #fff;
 }

@@ -24,11 +24,9 @@ background-position:top center;">
 			<div class="cols">
 				<?php //the_field("about_content") ?>
 					<div class="referalls">
-				<div class="">
 					<div class="title">
 						<?php the_field("about_content") ?>
 					</div>
-					<div class="cols">
 						<div class="slider">
 							<div class="items">
 
@@ -43,7 +41,7 @@ background-position:top center;">
 
 															<div class="item">
 																<blockquote>																	
-																	<?php the_field("title") ?>																	
+																	<h4><sup>&gt;&gt;</sup><?php the_field("title") ?><sup>&lt;&lt;</sup></h4>
 																	<?php the_content(); ?>
 																	<?php the_post_thumbnail("referral"); ?>
 																	<cite>- <?php the_title(); ?> <span><?php echo get_the_excerpt(); ?></span></cite>
@@ -62,8 +60,6 @@ background-position:top center;">
 							<?php wp_reset_query(); ?>
 							</div>
 						</div>
-					</div>
-				</div>
 			</div>	
 			</div>
 		</div>
