@@ -1191,10 +1191,15 @@ nav#menu.home-top {
 
 .about-section .container {
     top: 25%;
-    padding-bottom: 60px;
+	/*#SC*/
+    /*padding-bottom: 60px;*/
     left: 0;
     right: 0;
     max-width: 100%;
+	/*#SC*/
+	min-height: 555px;
+	/*#SC*/
+	/*max-height: 555px;*/
 }
 
 
@@ -1384,7 +1389,8 @@ nav#menu.home-top {
         height: 100%;
         right: 0;
         overflow: hidden;
-        background: #fff;
+		/*SC*/
+        /*background: #30343c;*/
         -webkit-transition: all .2s ease;
         -moz-transition: all .2s ease;
         transition: all .2s ease;
@@ -1392,7 +1398,7 @@ nav#menu.home-top {
     }
 
     .disciplines .col.active .wrp {
-        margin-top: -298px;
+        margin-top: -225px;
     }
 
     .disciplines .col {
@@ -1440,7 +1446,8 @@ nav#menu.home-top {
         z-index: 99;
         font-weight: 900;
         display: block;
-        color: #777;
+		/*#SC*/
+        /*color: #777;*/
         margin: 9px 0;
         letter-spacing: 2.7px;
         margin: -85px 0 0;
@@ -1452,7 +1459,8 @@ nav#menu.home-top {
     }
 
     .disciplines h3 {
-        color: #212121;
+		/*#SC*/
+        /*color: #212121;*/
         font-family: "Roboto";
         margin: 15px 0 0;
         font-size: 8pt;
@@ -1482,7 +1490,7 @@ nav#menu.home-top {
         display: block;
         cursor: pointer;
         position: relative;
-        z-index: 9;
+        z-index: 17;
         margin: 1px 0 0 0;
         width: auto;
         -webkit-transition: all .2s ease;
@@ -1500,8 +1508,11 @@ nav#menu.home-top {
     }
 
     .disciplines h2 {
-        padding: 18px 0;
-        color: #000;
+        padding: 18px 10px;
+		/*#SC*/
+        color: #bad532;
+		position: relative;
+		z-index: 17;
     }
 
     .btn-all {
@@ -1714,6 +1725,13 @@ nav#menu.home-top {
         /*background: #30343c;*/
         color: #fff;
     }
+	
+    .container-disciplines {
+        padding: 0 0 32px;
+        background: #30343c;
+        color: #fff;
+		z-index: 16;
+    }	
 
     .referalls h2 {
       line-height: 1.3;
@@ -2064,11 +2082,12 @@ nav#menu.home-top {
     .parallax-holder {
       /* display: none; */
         position: absolute;
-        bottom: -1000px;
-        left: 0;
+        bottom: -50px;
+        left: -90px;
         width: 695px;
         height: 642px;
         overflow: hidden;
+		z-index: 17;		
     }
 
     .parallax-holder .mask {
@@ -3474,8 +3493,9 @@ nav#menu.home-top {
 .case_post .blog-posts {
     display: flex;
     padding: 0 0 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap;	
 }
+
 /* .blog-posts article.case_post {
     display: flex;
     flex-direction: column;
@@ -3495,24 +3515,31 @@ nav#menu.home-top {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgba(255,255,255,.25);
-    width: 50%;
-    height: 20rem;
+	/*#SC*/
+    /*background: rgba(255,255,255,.25);*/
+	/*#SC*/
+    width: 33%;
+	/*#SC*/
+    height: 10rem;
     margin: 0;
     padding: 0;
     overflow: hidden;
     vertical-align: text-top;
-    border: 1px solid#efefef;
+	/*#SC*/
+    /*border: 1px solid#efefef;*/
 }
 .blog-posts article.case_post:hover {
-    background: rgba(186, 213, 50, 0.8);
+	/*#SC*/
+    /*background: rgba(186, 213, 50, 0.8);*/
     border: 1px solid#efefef;
 }
 .blog-posts article.case_post .image {
     width: 65%;
     height: 100px;
-    padding-bottom: 15px;
-    margin-bottom: 20px;
+	/*#SC*/
+    /*padding-bottom: 15px;*/
+	/*#SC*/
+    /*margin-bottom: 20px;*/
 }
 .blog-posts article.case_post h2 {
     color: #212121;
@@ -4375,7 +4402,8 @@ div.search input {
         text-transform: uppercase;
         font-weight: 900;
         display: block;
-        color: #777;
+		/*#SC*/
+        /*color: #777;*/
         margin: -36px 0 0;
         letter-spacing: 2.7px;
     }
@@ -4383,7 +4411,8 @@ div.search input {
         margin-top: 16px;
     }
     .disciplines h3 {
-        color: #212121;
+		/*#SC*/
+        /*color: #212121;*/
         font-family: "Roboto";
         margin: 39px 0 0;
         font-size: 14px;
@@ -4406,8 +4435,9 @@ div.search input {
         width: auto;
     }
     .disciplines h2 {
-        padding: 27px 0;
-        color: #000;
+        padding: 27px 10px;
+		/*#SC*/
+        color: #bad532;
     }
     .recent-works {
         padding-bottom: 78px;
@@ -4532,7 +4562,8 @@ div.search input {
     .about-section {
         background-size: cover;
         position: relative;
-        padding-bottom: 80px;
+		/*SC*/
+        /*padding-bottom: 80px;*/
     }
     .about-section:before {
         background-size: cover;
@@ -5409,6 +5440,14 @@ div.search input {
         letter-spacing: 8px;
         padding: 22px 0 32px;
     }
+    /*#SC*/
+    .case_post h1{
+    font-size: 28px !important;
+    }
+    article.case_post{
+         height: 18rem !important;
+    }
+
     .works-header p {
         font-size: 14px;
         letter-spacing: 4.5px;
@@ -5974,7 +6013,10 @@ div.search input {
         -ms-transform: scale(.8);
         -webkit-transform: scale(.8);
         transform: scale(.8);
-        left: -70px;
+		/*#SC*/
+        left: -90px;
+		/*#SC*/
+		bottom: -110px;
     }
     .entry .gallery.gallery-columns-4 {
         margin: 20px 0 20px -10px !important;
@@ -6012,7 +6054,7 @@ div.search input {
     }
 }
 
-@media screen and (max-width: 1115px) {
+@media screen and (max-width: 1115px) {			
     .slogan-mas img {
         width: 273px;
         margin: -2px 0 0 -56px;
@@ -6546,7 +6588,8 @@ div.search input {
         left: -27%;
     }
     .about-section .container {
-        padding-bottom: 20px;
+		/*#SC*/
+        /*padding-bottom: 20px;*/
     }
     .about-section .cols {
 
@@ -7697,4 +7740,36 @@ South Concept updates
 #about .referalls .item blockquote p{
     font-size: 15px;
     color: #fff;
+}
+
+/*SECTION CASES*/
+
+/*#SC*/
+.case_post {
+	background: #bad735;
+}
+
+/*#SC*/
+.case_post h1{
+    font-size: 19px;
+    letter-spacing: 8px;
+    padding: 22px 0 32px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    background-color: #bad735;
+}
+
+/*#SC*/
+.case_post  img{
+	-webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   filter: grayscale(100%);
+   transition: all 0.5s ease;
+}
+
+/*#SC*/
+.case_post  img:hover{
+	-webkit-filter: grayscale(0%);
+   -moz-filter: grayscale(0%);
+   filter: grayscale(0%);
 }

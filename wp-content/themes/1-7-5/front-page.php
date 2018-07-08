@@ -87,7 +87,7 @@ background-position:top center;">
 			}
 		</script>		
 		
-		<div class="container">
+		<div class="container-disciplines">
 			<div class="disciplines">
 				<div class="title">
 					<h2>disciplines</h2>
