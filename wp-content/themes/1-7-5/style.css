@@ -3494,6 +3494,7 @@ nav#menu.home-top {
     display: flex;
     padding: 0 0 20px;
     flex-wrap: wrap;	
+    background-color: #bad532;
 }
 
 /* .blog-posts article.case_post {
@@ -6170,7 +6171,10 @@ div.search input {
         width: auto;
         padding: 0 15px;
     }
-
+    /*#SC*/
+    .case_post .container {
+        background-color: #bad532;
+    }
     .home-featured .play a {
         margin-right: 5px;
     }
