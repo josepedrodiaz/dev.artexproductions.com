@@ -6666,6 +6666,7 @@ div.search input {
         width: 50% !important;
         overflow: hidden;
         float: left;
+		padding-left: 10px;
     }
     .disciplines .col:nth-child(3) {
         clear: both;
@@ -7750,7 +7751,7 @@ South Concept updates
 
 /*#SC*/
 .case_post {
-	background: #bad735;
+	background: #bad735 !important;
 }
 
 /*#SC*/
