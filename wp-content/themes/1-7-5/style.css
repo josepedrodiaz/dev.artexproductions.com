@@ -890,7 +890,7 @@ nav#menu.home-top {
 	width: 300px;	
 }
 
-@media only screen and (min-width: 767px){
+@media only screen and (min-width: 767px){		
   .home #header {
       display: none;
   }
@@ -1319,7 +1319,7 @@ nav#menu.home-top {
     .about-section h3 {
         font-size: 45px;
         color: #fff;
-        font-weight: 700;
+        font-weight: bold;
         line-height: 55px;
         padding: 5px 50px 14px 0;
         font-family: "Roboto";
@@ -1408,6 +1408,7 @@ nav#menu.home-top {
 
     .disciplines .col:nth-child(1) {
         width: 26%;
+		padding-left: 10px;
     }
 
     .disciplines .col:nth-child(2) {
@@ -6060,6 +6061,18 @@ div.search input {
 }
 
 @media screen and (max-width: 1115px) {			
+
+	/*#SC*/
+	#about .referalls .item blockquote h4 {
+		font-size: 46px !important;
+		margin-bottom: 15px !important;
+	}
+	
+	/*#SC*/
+	.about-section .cols p {
+		line-height: 19px !important;
+	}
+	
     .slogan-mas img {
         width: 273px;
         margin: -2px 0 0 -56px;
@@ -6128,19 +6141,20 @@ div.search input {
     }
     .about-section .cols {
         width: 100%;
-        padding-left: 30px;
+        padding-left: 0;
         padding-right: 30px;
     }
+	/*#SC*/
     .about-section h3 {
         /*letter-spacing: 3.5px;*/
-        font-size: 47px;
+        font-size: 30px;
         line-height: 40px;
     }
     #about .title p{
         line-height: 25px;
     }
     .about-section p {
-        font-size: 16px;
+        font-size: 10px !important;
         line-height: 20px;
     }
 	/*#SC*/
@@ -6155,7 +6169,7 @@ div.search input {
     .referalls blockquote {
         margin-top: 45px;
         margin-left: 50px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         padding-right: 3px;
         overflow: hidden;
     }
@@ -6314,11 +6328,20 @@ div.search input {
     .recent-awards {
         padding: 30px 0 10px;
     }
-    .title {
-        float: none;
+	/*#SC*/
+    .title {        
         width: auto;
         padding-bottom: 20px;
+		padding-right: 0 !important;
     }
+	
+	/*#SC*/
+    .disciplines .title , .clients .title, .team .title, .recent-awards .title{        
+		float: none;
+        width: auto;
+        padding-bottom: 20px;		
+    }	
+		
     .cols {
         margin-left: 0
     }
@@ -6382,29 +6405,46 @@ div.search input {
 
 @media screen and (max-width: 767px) {
 
-	  /*#SC*/
-	   #about .title  h3, #about .title  p { 
+    .referalls .bx-pager a.active {
+        background: #30343c;
+        opacity: 1;
+    }
+
+	/*#SC*/
+	#about .referalls .item blockquote h4{
+		font-size: 46px !important;
+	}
+
+
+	/*#SC*/
+	#about .referalls .item blockquote h4{
+		font-size: 40px !important;
+	}
+	 
+	 /*#SC*/
+	#about .title  h3, #about .title  p { 
 		text-align:center;
-	  }
+	}
 
 	/*#SC*/
 	#about .title {
 		width: 85vw;
 		padding-top: 0;
-		margin: 15px auto;
-		padding-right: 0;
+		margin: 0 auto;
+		padding-right: 0;		
+		float: none;
     }
 	
 	/*#SC*/
 	.about-section h3{
 		line-height: 42px; 		
-		padding: 0 !important;
+		padding: 0 !important;		
     }
 	
 	/*#SC*/
 	#about .title p{
 		line-height: 18px; 		
-		color: #fff
+		color: #fff;		
     }
 	
 		
@@ -6624,6 +6664,9 @@ div.search input {
     .about-section .container {
 		/*#SC*/
         /*padding-bottom: 20px;*/		
+		padding: 0 !important;
+		background-color: #bad532;
+		min-height: 635px;
     }
     .about-section .cols {        
 		padding: 0!important;
@@ -6893,8 +6936,14 @@ div.search input {
     .referalls .slider, .referalls blockquote {
         margin: 0;
     }
+	
+	.referalls .slider{
+        background-color: #bad532;
+    }
+	
     .referalls blockquote {
-        margin-bottom: 20px;
+        margin: 0 10px 20px;
+		
     }
     .referalls blockquote p {
         min-height: 0;
@@ -7198,7 +7247,7 @@ div.search input {
   .about-section .referalls h3{ 
 	padding: 0;
 	font-size: 18px !important;
-	line-height: 22px !important;
+	line-height: 18px !important;
   }
   /*#SC*/
   .about-section .referalls p{ 	
@@ -7208,6 +7257,7 @@ div.search input {
   /*#SC*/
   #about .title{ 	
 	margin-top: 0 !important;
+	max-width: 280px;
   }
 }
 
@@ -7226,6 +7276,7 @@ div.search input {
   /*#SC*/
   #about .title{ 	
 	margin-top: 0 !important;
+	max-width: 288px;
   }
 }
 
@@ -7245,13 +7296,14 @@ div.search input {
   /*#SC*/
   #about .title{ 	
 	margin-top: 0 !important;
+	max-width: 400px;
   }  
 }
 
 @media screen and (min-width:440px) and (max-width: 490px){   
   /*#SC*/
   .about-section .referalls h3{ 
-	padding: 20px !important;	
+	padding: 10px !important;	
 	padding-top:34px !important;	
 	font-size: 26px !important;
 	line-height: 35px !important;
@@ -7265,6 +7317,35 @@ div.search input {
   /*#SC*/
   #about .title{ 	
 	margin-top: 0 !important;
+	max-width: 365px;
+  }  
+}
+
+@media screen and (min-width:490px) and (max-width: 570px){   
+  /*#SC*/
+  .about-section .referalls h3{ 
+	padding-top:35px !important;	
+  }
+       
+  /*#SC*/
+  #about .title{ 	
+	margin-top: 0 !important;
+	min-height: 300px;
+  }  
+}
+
+@media screen and (min-width:570px) and (max-width: 767px){   
+  /*#SC*/
+  .about-section .referalls h3{ 
+	padding-top:75px !important;	
+  }
+       
+  /*#SC*/
+  #about .title{ 	
+	margin-top: 0 !important;
+	max-width: 480px;
+	min-height: 350px;
+	float: none !important;
   }  
 }
 
@@ -7274,6 +7355,7 @@ div.search input {
 	min-height: 180px;
   }  
 }
+
 @media screen and (min-width:530px) and (max-width: 767px){
   /*#SC*/
   .home-featured { 
@@ -7285,6 +7367,111 @@ div.search input {
     display: block;
     width: 100%;
   }  
+}
+
+@media screen and (min-width:767px) and (max-width: 930px){
+	/*#SC*/
+	#about .slider p {
+		font-size: 10px !important;
+	}	
+	
+	/*#SC*/
+	.about-section .container {		
+		min-height: 430px;
+	}
+
+	/*#SC*/
+	.referalls  {		
+		padding-bottom: 5px;
+	}
+	
+	/*#SC*/
+	.referalls blockquote {		
+		margin: 45px auto 10 px !important;
+		padding-right: 0 !important;
+	}	
+	
+	/*#SC*/
+	#about .title p {
+		max-width: 320px !important;
+	}	
+	
+	/*#SC*/
+	#about .container {
+		background-size: cover !important;
+	}
+
+	/*#SC*/
+	#about h3 {
+		max-width: 245px !important;
+	}			
+}
+
+@media screen and (min-width:930px) and (max-width: 1115px){
+	/*#SC*/
+	.about-section .container {		
+		min-height: 480px;
+	}
+	
+	/*#SC*/
+	#about .container{		
+		background-position: center !important;
+		background-size: cover !important;
+	}
+	
+	/*#SC*/
+	#about p{		
+		font-size: 16px !important;
+	}
+	
+	/*#SC*/
+	#about h3{		
+		font-size: 34px !important;
+	}
+	
+	/*#SC*/
+	#about h4{		
+		font-size: 60px !important;
+	}		
+}
+
+@media screen and (min-width:1115px){
+	/*#SC*/
+	#about h3{		
+		font-size: 3vw !important;		
+	}	
+	
+	/*#SC*/
+	#about p{		
+		font-size: 1.5vw !important;		
+	}	
+	
+	/*#SC*/
+	#about .slider p{		
+		margin-top: -20px !important;		
+		line-height: 20px !important;		
+	}		
+	
+	/*#SC*/
+	#about h4{		
+		font-size: 4vw !important;
+	}		
+	
+	/*#SC*/
+	#about .title{		
+		padding-right: 0 !important;
+		max-width: 400px !important;
+	}
+
+	/*#SC*/
+	#about .container{				
+		background-size: cover !important;
+		background-position: center !important;
+	}
+	
+	.referrals blockquote {				
+		margin-left: 0 !important;	
+	}
 }
 
 @media screen and (min-width:420px) and (max-width: 770px){
@@ -7818,6 +8005,7 @@ a .selectorText {
     line-height: 60px;
     margin-top: 31px;
 	white-space: nowrap;
+	font-weight: bold;
 }
 #about .referalls .item blockquote p{
     font-size: 15px;
