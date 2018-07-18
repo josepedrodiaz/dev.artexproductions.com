@@ -538,10 +538,10 @@ $(window).load(function() {
 	referalls = $(".referalls .items").bxSlider({
 		controls: false,
 		minSlides: 1,
-		maxSlides: 2,
-		slideWidth: 437,
+		maxSlides: 1,
+		//slideWidth: 437,
 		slideMargin: 0,
-		adaptiveHeight: true,
+		//adaptiveHeight: true,
 		auto: true,
 		autoHover: true
 	});

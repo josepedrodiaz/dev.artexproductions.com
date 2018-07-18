@@ -5646,7 +5646,7 @@ div.search input {
         max-width: none !important;
     }
     .referalls .item {
-        width: 650px !important;
+        /*width: 650px !important;*/
         float: left;
     }
     .referalls img {
@@ -5655,10 +5655,13 @@ div.search input {
         width: auto;
         margin: 8px 0;
     }
+	
+	/*#SC*/
     .referalls .bx-pager {
-        position: absolute;
-        bottom: 0;
-        right: 0;
+        position: relative;
+		width: 220px;		
+        /*bottom: 0;
+        right: 0;*/
     }
     .referalls .bx-pager div {
         float: left;
@@ -5671,10 +5674,13 @@ div.search input {
         width: 20px;
         height: 4px;
     }
+	/*#SC*/
     .referalls .slider {
         position: relative;
-        margin-left: -100px;
+        /*margin-left: -100px;*/
         overflow: hidden;
+		width: 600px;
+		float: right;
     }
     .referalls blockquote:before {
         position: absolute;
@@ -5696,7 +5702,8 @@ div.search input {
         position: relative;
         font-weight: 300;
         padding: 0;
-        margin: 124px 0 48px 100px;
+		/*#SC*/
+        margin: 124px 0 48px 0;
     }
     .referalls blockquote cite {
         font-weight: normal;
@@ -7443,18 +7450,19 @@ div.search input {
 	
 	/*#SC*/
 	#about p{		
-		font-size: 1.5vw !important;		
+		font-size: 1.2vw !important;		
 	}	
 	
 	/*#SC*/
 	#about .slider p{		
 		margin-top: -20px !important;		
-		line-height: 20px !important;		
+		line-height: 21px !important;		
 	}		
 	
 	/*#SC*/
 	#about h4{		
 		font-size: 4vw !important;
+		overflow: hidden !important;
 	}		
 	
 	/*#SC*/
@@ -7469,9 +7477,64 @@ div.search input {
 		background-position: center !important;
 	}
 	
+	/*#SC*/
 	.referrals blockquote {				
 		margin-left: 0 !important;	
 	}
+	
+	/*#SC*/
+	#about .bx-has-pager{						
+		margin-left: 67px !important;
+	}
+}
+
+@media screen and (min-width:1640px){
+	/*#SC*/
+	#about .container{				
+		background-size: cover !important;
+		background-position: center !important;
+		min-height: 700px;
+	}
+
+	/*#SC*/
+	#about .bx-has-pager{						
+		margin-left: 0 !important;
+	}
+
+}
+
+@media screen and (min-width:1970px){
+	/*#SC*/
+	#about .referalls .item blockquote h4{				
+		line-height: 80px !important;
+
+	}
+}
+
+@media screen and (min-width:3270px){
+
+	/*#SC*/
+	#about h3{		
+		font-size: 1.5vw !important;		
+	}	
+	
+	/*#SC*/
+	#about p{		
+		font-size: 0.75vw !important;			
+	}
+	
+	/*#SC*/
+	#about .slider p{		
+		margin-top: -20px !important;		
+		line-height: 1vw !important;		
+	}		
+	
+	/*#SC*/
+	#about h4{		
+		font-size: 2vw !important;
+		overflow: hidden !important;
+	}			
+
 }
 
 @media screen and (min-width:420px) and (max-width: 770px){
