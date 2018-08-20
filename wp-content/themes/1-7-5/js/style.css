@@ -891,14 +891,6 @@ nav#menu.home-top {
 }
 
 @media only screen and (min-width: 767px){		
-
-	/*#SC*/
-    .referalls .slider {
-        position: relative;
-        overflow: hidden;
-        display: none;
-    }
-
   .home #header {
       display: none;
   }
@@ -1787,6 +1779,12 @@ nav#menu.home-top {
     .referalls .bx-pager a.active {
         background: #bad532;
         opacity: 1;
+    }
+
+    .referalls .slider {
+        position: relative;
+        overflow: hidden;
+        display: none;
     }
 
     .referalls blockquote:before {
@@ -6087,7 +6085,8 @@ div.search input {
 	#x-image{
 		min-height: 590px !important;
 		background-repeat: no-repeat !important;
-		background-size: cover !important;		
+		background-size: cover !important;
+		background-position-x: -75px !important;
 	}
 
 	/*#SC*/
@@ -6427,32 +6426,7 @@ div.search input {
     }
 }
 
-@media only screen and (max-width : 767px)  and (orientation: landscape) {
-	/*#SC*/
-	.referalls .slider{
-		height: 550px !important;		
-	}    			
-	
-	/*#SC*/
-	#about .container{
-		bottom: -210px !important;		
-	}    		
-	
-	/*#SC*/
-	.about-section {
-		min-height: 750px !important;		
-	}	
-}
-
-
 @media screen and (max-width: 767px) {
-
-	/*#SC*/
-	.bx-has-pager{
-		position:relative;
-		bottom: 10px;
-	}
-
 
 	/*#SC*/
 	#galaxy-image{
@@ -8241,7 +8215,7 @@ a .selectorText {
 }
 
 #x-image{
-    background-position: center;
+    background-position-y: -30px;
 }
 
 

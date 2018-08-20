@@ -68,7 +68,7 @@ jQuery(function ($) {
 	var teamS;
 
 	function mobileCheck() {
-	
+			
 	//$(".home-featured").css({ height: $(window).height() });
 	// $(".about-section").css({ height: $(window).height()-52 });
 	$(".scraps-over").css({ height: $(window).height()-53 });
@@ -86,10 +86,30 @@ jQuery(function ($) {
 
 	var winWidth = $(window).width();
 	
-	if (winWidth>=767)	
+	if (winWidth>=767){
+	
 		$(".home-featured").css({ height: $(window).height() });		
-	else
+		
+		if ( $('#home-video').attr('src') != videoDesktop){
+			$('#home-video').attr('src', videoDesktop);
+			if (typeof $("#home-video")[0] !== 'undefined' ){
+				$("#home-video")[0].load();
+				$("#home-video")[0].play();		
+			}
+		}
+	}
+	else{
+	
 		$(".home-featured").css({ height: 0 });
+		
+		if ( $('#home-video').attr('src') != videoMobile){			
+			$('#home-video').attr('src', videoMobile);
+			if (typeof $("#home-video")[0] !== 'undefined' ){
+				$("#home-video")[0].load();
+				$("#home-video")[0].play();			
+			}
+		}
+	}
 	
 	if (winWidth<500) {
 		if (!$("body").hasClass("mobileS-v")) {
@@ -124,7 +144,8 @@ jQuery(function ($) {
 			$("body").removeClass("tablet-v mobile-v");
 			$("body").addClass("mobileS-v");
 		};
-	} else if (winWidth<767) {			
+	} else if (winWidth<767) {
+			
 		if (!$("body").hasClass("mobile-v")) {
 
 			if ($(".referalls .bx-wrapper").length) {
@@ -746,3 +767,5 @@ function openNav(){
 function closeNav(){
     mySideNav.style.height="0";
 }
+
+
