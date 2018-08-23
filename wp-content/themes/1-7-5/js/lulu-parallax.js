@@ -28,6 +28,15 @@ function luluParallax() {
   // Action  
   $(window).scroll(function() {
   if ($(window).width()>=767){
+	
+	var correctionBigScreen;
+	
+	if ($(window).width()<=2186)
+		correctionBigScreen = 195;
+	else
+		correctionBigScreen = 390;
+	
+	
 	var scrollPosition = $(window).scrollTop();
 	$('.parallax-container').each(function() {
 	  var groupTopRelative = Math.round($(this).data('lp').gtf - scrollPosition);
@@ -49,7 +58,8 @@ function luluParallax() {
 		} else if ($(this).hasClass('with') && $(this).hasClass('foreground')) {
 		  $(this).css(
 			'top',
-			fgPosition-viewportHeight/4.2			
+			//fgPosition-viewportHeight/5.2			
+			fgPosition-correctionBigScreen
 		  );
 		} else if ($(this).hasClass('against') && $(this).hasClass('background')) {
 		  $(this).css(

@@ -40,21 +40,27 @@
 		<script>			
 			$(document).ready(function() {	
 				luluParallax();
-				$("#about .slider").css("display","block");
+				if ($(window).width()>=767)
+					$("#about .slider").css("display","block");
 			});
 			
 			/*
 			 * When a user resizes the browser or changes the orientation of their device
 			 * https://css-tricks.com/snippets/jquery/done-resizing-event/
 			 */
+			 
+			
 			var resizeTimer;
 			$(window).on('resize', function(e) {
 			  clearTimeout(resizeTimer);
 			  resizeTimer = setTimeout(function() {
 				luluParallax(); // Fire the plugin again
-				// location.reload(true); // Reload the page
+				//location.reload(true); // Reload the page
+				if ($(window).width()>=767)
+					$("#about .slider").css("display","block");
 			  }, 400);
 			});
+			
 		</script>		
 			
 	<?php
@@ -162,9 +168,7 @@ $(window).load(function() {
 			<video id="home-video" width="1920" height="1000" autoplay="autoplay" playsinline="true" muted loop>
 			  <source src="" type="video/mp4">
 			</video>
-			<script>
-			var videoDesktop = "<?php echo the_field("background_video") ?>";
-			var videoMobile = "<?php echo the_field("background_video_mobile") ?>";
+			<script>			
 			
 			var vid=document.getElementById('home-video');
 vid.addEventListener("loadstart", showVideo, false);
@@ -261,3 +265,7 @@ function showVideo(e) {
 	<?php
 };
 ?>
+<script>
+			var videoDesktop = "<?php echo the_field("background_video") ?>";
+			var videoMobile = "<?php echo the_field("background_video_mobile") ?>";
+</script>

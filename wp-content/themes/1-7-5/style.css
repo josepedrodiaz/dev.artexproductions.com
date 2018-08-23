@@ -1191,7 +1191,7 @@ nav#menu.home-top {
 }
 #about .title{
     width: 40vw;
-    padding-top: 80px;
+    padding-top: 83px;
     text-align: left;
     margin-right: 10vw;
     padding-right: 12vw; 
@@ -1755,7 +1755,7 @@ nav#menu.home-top {
 
     .referalls img {
         float: right;
-        height: 23px;
+        height: 46px;
         width: auto;
         margin: 7px 0;
     }
@@ -1807,7 +1807,8 @@ nav#menu.home-top {
         position: relative;
         font-weight: 300;
         padding: 0;
-        margin: 83px 0 48px 67px;
+		/*#SC*/
+        margin: 53px 0 48px 67px;
     }
 
     .referalls blockquote cite {
@@ -5665,7 +5666,7 @@ div.search input {
     }
     .referalls img {
         float: right;
-        height: 36px;
+        height: 72px;
         width: auto;
         margin: 8px 0;
     }
@@ -6189,8 +6190,14 @@ div.search input {
     .referalls {
         padding-bottom: 10px;
     }
+	
+	/*#SC*/
+	#about .title{
+        padding-top: 20px;        
+    }
     .referalls blockquote {
-        margin-top: 45px;
+		/*#SC*/
+        margin-top: -20px;
         margin-left: 50px;
         margin-bottom: 10px;
         padding-right: 3px;
@@ -6378,7 +6385,7 @@ div.search input {
         line-height: 16px;
     }
     .referalls img {
-        height: 15px;
+        height: 30px;
     }
     .referalls h2 {
         padding: 30px 0 0;
@@ -6446,11 +6453,17 @@ div.search input {
 
 
 @media screen and (max-width: 767px) {
+	/*#SC*/
+	.referalls img {
+		-webkit-filter: grayscale(100%) brightness(60%) contrast(10000000%) !important;
+	   -moz-filter: grayscale(100%) brightness(60%) contrast(10000000%) !important;
+	   filter:  grayscale(100%) brightness(0%) contrast(10000000%) !important; 
+	}
 
 	/*#SC*/
 	.bx-has-pager{
 		position:relative;
-		bottom: 10px;
+		bottom: 20px;
 	}
 
 
@@ -7393,7 +7406,19 @@ div.search input {
   #about .title{ 	
 	margin-top: 0 !important;
 	max-width: 400px;
-  }  
+  }
+
+   /*#SC*/
+  .about-section { 	
+	min-height: 650px !important;
+  }
+  
+   /*#SC*/
+  #about .container { 	
+	bottom: -125px !important;
+  }
+  
+  
 }
 
 @media screen and (min-width:440px) and (max-width: 490px){   
@@ -7415,6 +7440,11 @@ div.search input {
 	margin-top: 0 !important;
 	max-width: 365px;
   }  
+  	
+	   /*#SC*/
+	  #about .container { 	
+		bottom: -125px !important;
+	  }  
 }
 
 @media screen and (min-width:490px) and (max-width: 570px){   
@@ -7428,6 +7458,17 @@ div.search input {
 	margin-top: 0 !important;
 	min-height: 300px;
   }  
+    
+   /*#SC*/
+  #about .container { 	
+	min-height: 860px !important;
+  }  
+  
+   /*#SC*/
+  .about-section { 	
+	min-height: 760px !important;
+  }
+ 
 }
 
 @media screen and (min-width:570px) and (max-width: 767px){   
@@ -7443,6 +7484,17 @@ div.search input {
 	min-height: 350px;
 	float: none !important;
   }  
+  
+   /*#SC*/
+  #about .container { 	
+	min-height: 895px !important;
+  }  
+  
+   /*#SC*/
+  .about-section { 	
+	min-height: 775px !important;
+  }  
+  
 }
 
 @media screen and (min-width:320px) and (max-width: 380px){
@@ -7502,6 +7554,7 @@ div.search input {
 		max-width: 245px !important;
 	}			
 }
+
 
 @media screen and (min-width:930px) and (max-width: 1115px){
 	/*#SC*/
