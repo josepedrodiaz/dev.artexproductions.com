@@ -13,7 +13,12 @@ function luluParallax() {
 	// Make adjustments if a FOREGROUND container is taller than its GROUP container
 	if ($(this).hasClass('foreground') /*&& (groupHeight < $(this).outerHeight())*/) {
 	  var groupHeight = $(this).outerHeight();
-	  $(this).parent('.parallax-group').css('height', groupHeight-100);
+		
+		if(window.innerHeight > window.innerWidth)
+			$(this).parent('.parallax-group').css('height', groupHeight-152);
+		else
+			$(this).parent('.parallax-group').css('height', groupHeight-100);
+			
 	  $(this).parent('.parallax-group').find('.background').css('min-height', groupHeight);
 	}
 	var groupTopFixed = Math.round($(this).parent('.parallax-group').offset().top);
@@ -26,16 +31,25 @@ function luluParallax() {
 	});
   });
   // Action  
-  $(window).scroll(function() {
+  //$(window).scroll(function() {
+  $(window).on('scroll resize', function (e) {  
+    
   if ($(window).width()>=767){
 	
-	var correctionBigScreen;
-	
-	if ($(window).width()<=2186)
-		correctionBigScreen = 195;
-	else
-		correctionBigScreen = 390;
-	
+	var correctionBigScreen=0;
+		
+	//if it is portrait
+	if(window.innerHeight > window.innerWidth){
+		correctionBigScreen=265;
+		$('#x-image').css('height','93vw');		
+	}
+	else{
+		$('#x-image').css('height','50vw');
+		if ($(window).width()<=2186)
+			correctionBigScreen = 195;
+		else
+			correctionBigScreen = 390;
+		}		
 	
 	var scrollPosition = $(window).scrollTop();
 	$('.parallax-container').each(function() {
@@ -60,8 +74,13 @@ function luluParallax() {
 			'top',
 			//fgPosition-viewportHeight/5.2			
 			fgPosition-correctionBigScreen
-		  );
+		  );		  
 		} else if ($(this).hasClass('against') && $(this).hasClass('background')) {
+			
+			if (e.type == 'resize'){
+				bgPosition = 0;			
+			}
+			
 		  $(this).css(
 			'top',
 			bgPosition

@@ -110,184 +110,31 @@ jQuery(function ($) {
 			}
 		}
 	}
-	
-	if (winWidth<500) {
-		if (!$("body").hasClass("mobileS-v")) {
 
-			if ($(".team .bx-wrapper").length) {
-				teamS.destroySlider();
-				teamS = $(".team .items").bxSlider({
-					controls: false,
-					minSlides: 1,
-					maxSlides: 1,
-					slideWidth: 650,
-					slideMargin: 0,
-					infiniteLoop: false,
-					auto: true,
-					autoHover: true,
-					touchEnabled: false
-				});				
-			} else {				
-				teamS = $(".team .items").bxSlider({
-					controls: false,
-					minSlides: 1,
-					maxSlides: 1,
-					slideWidth: 650,
-					slideMargin: 0,
-					infiniteLoop: false,
-					auto: true,
-					autoHover: true,					
-					touchEnabled: false
-				});															
-			};
-
-			$("body").removeClass("tablet-v mobile-v");
-			$("body").addClass("mobileS-v");
-		};
-	} else if (winWidth<767) {
-			
-		if (!$("body").hasClass("mobile-v")) {
-
-			if ($(".referalls .bx-wrapper").length) {
-				referalls.destroySlider();
-				referalls = $(".referalls .items").bxSlider({
-					controls: false,
-					minSlides: 1,
-					maxSlides: 1,
-					//slideWidth: 650,
-					slideMargin: 0,
-					auto: true,
-					autoHover: true,
-					touchEnabled: false
-				});
-			} else {
-				referalls = $(".referalls .items").bxSlider({
-					controls: false,
-					minSlides: 1,
-					maxSlides: 1,
-					//slideWidth: 650,
-					slideMargin: 0,
-					auto: true,
-					autoHover: true,
-					touchEnabled: false
-				});
-			};
-
-
-			if ($(".team .bx-wrapper").length) {
-				teamS.destroySlider();
-				teamS = $(".team .items").bxSlider({
-					controls: false,
-					minSlides: 2,
-					maxSlides: 2,
-					slideWidth: 650,
-					slideMargin: 0,
-					infiniteLoop: false,
-					auto: true,
-					autoHover: true,
-					touchEnabled: false
-				});
-			} else {
-				teamS = $(".team .items").bxSlider({
-					controls: false,
-					minSlides: 2,
-					maxSlides: 2,
-					slideWidth: 650,
-					slideMargin: 0,
-					infiniteLoop: false,
-					auto: true,
-					autoHover: true,
-					touchEnabled: false
-				});
-			};
-
-			$("body").removeClass("tablet-v mobileS-v");
-			$("body").addClass("mobile-v");
-		};
-	} else {			
-		if (winWidth<1000-getScrollbarWidth()) {
-				
-			if (!$("body").hasClass("tablet-v")) {
-
-				if ($(".referalls .bx-wrapper").length) {
-					referalls.destroySlider();
-					referalls = $(".referalls .items").bxSlider({
-						controls: false,
-						minSlides: 1,
-						maxSlides: 1,
-						//slideWidth: 650,
-						slideMargin: 0,
-						auto: true,
-						autoHover: true
-					});
-				};
-
-				if ($(".team .bx-wrapper").length) {
-					teamS.destroySlider();
-					teamS = $(".team .items").bxSlider({
-						controls: false,
-						minSlides: 2,
-						maxSlides: 2,
-						slideWidth: 650,
-						slideMargin: 0,
-						auto: true,
-						infiniteLoop: false,
-						autoHover: true,
-						touchEnabled: false
-					});
-				} else {
-					teamS = $(".team .items").bxSlider({
-						controls: false,
-						minSlides: 2,
-						maxSlides: 2,
-						slideWidth: 650,
-						slideMargin: 0,
-						infiniteLoop: false,
-						auto: true,
-						autoHover: true,
-						touchEnabled: false
-					});
-				};
-
-				$("body").removeClass("mobile-v mobileS-v");
-				$("body").addClass("tablet-v");
-			};
-		} else {		
-
-			if ($("body").hasClass("tablet-v") || $("body").hasClass("mobile-v") || $("body").hasClass("mobileS-v")) {
-
-				if ($(".team .bx-wrapper").length) {
-					teamS.destroySlider();
-
-					teamS = $(".team .items").bxSlider({
-						controls: false,
-						minSlides: 3,
-						maxSlides: 3,
-						slideWidth: 650,
-						slideMargin: 0,
-						auto: true,
-						infiniteLoop: false,
-						autoHover: true,
-						touchEnabled: false
-					});
-				} else {
-					teamS = $(".team .items").bxSlider({
-						controls: false,
-						minSlides: 2,
-						maxSlides: 2,
-						slideWidth: 650,
-						slideMargin: 0,
-						infiniteLoop: false,
-						auto: true,
-						autoHover: true,
-						touchEnabled: false
-					});
-				};
-
-				$("body").removeClass("mobile-v tablet-v mobileS-v");
-			};
-		}
-	}
+		/*
+	teamS = $(".team .items").bxSlider({
+			controls: false,
+			minSlides: 2,
+			maxSlides: 2,
+			slideWidth: 650,
+			slideMargin: 0,
+			infiniteLoop: false,
+			auto: true,
+			autoHover: true,					
+			touchEnabled: false
+		});
+		*/
+		
+	referalls = $(".referalls .items").bxSlider({
+			controls: false,					
+			minSlides: 1,
+			maxSlides: 1,
+			//slideWidth: 650,
+			slideMargin: 0,
+			auto: true,
+			autoHover: true,
+			touchEnabled: false
+		});			
 };
 
 
@@ -567,6 +414,7 @@ $(window).load(function() {
 		autoHover: true
 	});
 
+	/*
 	teamS = $(".team .items").bxSlider({
 		controls: false,
 		minSlides: 3,
@@ -578,6 +426,7 @@ $(window).load(function() {
 		autoHover: true,
 		touchEnabled: false
 	});
+	*/
 		
 	$('.team .moving').hover(		
 		function(){

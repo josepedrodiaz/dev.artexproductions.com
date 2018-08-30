@@ -1906,8 +1906,10 @@ nav#menu.home-top {
     }
     @media screen and (min-width: 1025px){
       .team.view-all .bx-viewport .item {
-          width: 195px !important;
+			
+          /*width: 195px !important;*/
           margin-right: 5px !important;
+		  
       }
       /* #SC 
         - blog list paragraph
@@ -1920,7 +1922,7 @@ nav#menu.home-top {
     }
     @media screen and (min-width: 1640px){
       .team.view-all .bx-viewport .item {
-          width: 250px !important;
+          /*width: 250px !important;*/
           margin-right: 10px !important;
       }
     }
@@ -6189,6 +6191,7 @@ div.search input {
     }
     .referalls {
         padding-bottom: 10px;
+		width: 100%;
     }
 	
 	/*#SC*/
@@ -6378,7 +6381,7 @@ div.search input {
     }
     .referalls .slider {
         margin: 0 0 0 -20px;
-        width: auto;
+        width: 40vw;
     }
     .referalls blockquote {
         font-size: 9px;
@@ -6453,6 +6456,12 @@ div.search input {
 
 
 @media screen and (max-width: 767px) {
+
+	/*#SC*/
+	.referalls .slider {        
+        width: auto;
+    }
+
 	/*#SC*/
 	.referalls img {
 		-webkit-filter: grayscale(100%) brightness(60%) contrast(10000000%) !important;
@@ -7585,6 +7594,11 @@ div.search input {
 }
 
 @media screen and (min-width:1115px){
+
+	#about .title{		
+		padding-top: 50px !important;
+	}	
+
 	/*#SC*/
 	#about h3{		
 		font-size: 3vw !important;	
@@ -7639,6 +7653,12 @@ div.search input {
 }
 
 @media screen and (min-width:1640px){
+
+	/*#SC*/
+	#about .title{						
+		padding-top: 83px !important;
+	}
+
 
 	/*#SC*/
 	#about .title p{						
@@ -7713,6 +7733,11 @@ div.search input {
 }
 
 @media screen and (min-width:3270px){
+
+	/*#SC*/
+	#about .title{						
+		padding-top: 110px !important;
+	}
 
 	/*#SC*/
 	#about h3{		
