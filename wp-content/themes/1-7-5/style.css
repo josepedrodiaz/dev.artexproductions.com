@@ -1,4 +1,3 @@
-
 /*
 Theme Name: Artex
 Theme URI:www.artexproductions.com
@@ -194,10 +193,6 @@ img {
     width: 1068px;
     margin: 0 auto;
 }
-#about-container{
-    width: 100%;
-}
-
 
 .container:after {
     content: "";
@@ -890,15 +885,7 @@ nav#menu.home-top {
 	width: 300px;	
 }
 
-@media only screen and (min-width: 767px){		
-
-	/*#SC*/
-    .referalls .slider {
-        position: relative;
-        overflow: hidden;
-        display: none;
-    }
-
+@media only screen and (min-width: 767px){
   .home #header {
       display: none;
   }
@@ -1176,38 +1163,21 @@ nav#menu.home-top {
     background-position: 0px;
     background-size: cover;
     position: relative;
-    /*min-height: 50vh;*/
+    min-height: 50vh;
     z-index: 15;
 }
 .about-section .cols p {
     font-family: 'Roboto', sans-serif;
-    line-height: 24px;
-    color: #30343C;
-    font-size: 14px;
-}
-#about .title p{
-    font-size: 18px;
-    line-height: 24px;
-}
-#about .title{
-    width: 40vw;
-    padding-top: 83px;
-    text-align: left;
-    margin-right: 10vw;
-    padding-right: 12vw; 
+    font-weight: 400;
+    line-height: 27px;
 }
 
 .about-section .container {
-    /*top: 25%;*/
-	/*#SC*/
-    /*padding-bottom: 60px;*/
+    position: absolute;
+    top: 25%;
+    padding-bottom: 60px;
     left: 0;
     right: 0;
-    max-width: 100%;
-	/*#SC*/
-	min-height: 555px;
-	/*#SC*/
-	/*max-height: 555px;*/
 }
 
 
@@ -1237,8 +1207,8 @@ nav#menu.home-top {
     }*/
 
     .about-section .cols {
-        width: 97%;
-        margin-left: 1%;
+        width: 600px;
+        margin: 0 auto;
         font-size: 14pt;
         line-height: 14.5pt;
         color: #545860;
@@ -1325,17 +1295,18 @@ nav#menu.home-top {
     }
 
     .about-section h3 {
-        font-size: 45px;
-        color: #fff;
-        font-weight: bold;
-        line-height: 55px;
-        padding: 5px 50px 14px 0;
+        font-size: 30px;
+        color: #bad532;
+        font-weight: 500;
+        line-height: normal;
+        padding: 5px 0 14px;
         font-family: "Roboto";
         text-transform: uppercase;
-        letter-spacing: 1px;
+        letter-spacing: 4.5px;
     }
 
     .title {
+        width: 170px;
         float: left;
     }
 
@@ -1397,8 +1368,7 @@ nav#menu.home-top {
         height: 100%;
         right: 0;
         overflow: hidden;
-		/*SC*/
-        /*background: #30343c;*/
+        background: #fff;
         -webkit-transition: all .2s ease;
         -moz-transition: all .2s ease;
         transition: all .2s ease;
@@ -1406,7 +1376,7 @@ nav#menu.home-top {
     }
 
     .disciplines .col.active .wrp {
-        margin-top: -225px;
+        margin-top: -298px;
     }
 
     .disciplines .col {
@@ -1416,7 +1386,6 @@ nav#menu.home-top {
 
     .disciplines .col:nth-child(1) {
         width: 26%;
-		padding-left: 10px;
     }
 
     .disciplines .col:nth-child(2) {
@@ -1433,7 +1402,7 @@ nav#menu.home-top {
 
     .disciplines p {
         font-size: 9pt;
-        padding-right: 15px;
+        padding-right: 35px;
     }
 
     .disciplines .active .wrp>p {
@@ -1455,8 +1424,7 @@ nav#menu.home-top {
         z-index: 99;
         font-weight: 900;
         display: block;
-		/*#SC*/
-        /*color: #777;*/
+        color: #777;
         margin: 9px 0;
         letter-spacing: 2.7px;
         margin: -85px 0 0;
@@ -1468,8 +1436,7 @@ nav#menu.home-top {
     }
 
     .disciplines h3 {
-		/*#SC*/
-        /*color: #212121;*/
+        color: #212121;
         font-family: "Roboto";
         margin: 15px 0 0;
         font-size: 8pt;
@@ -1499,7 +1466,7 @@ nav#menu.home-top {
         display: block;
         cursor: pointer;
         position: relative;
-        z-index: 17;
+        z-index: 9;
         margin: 1px 0 0 0;
         width: auto;
         -webkit-transition: all .2s ease;
@@ -1517,12 +1484,8 @@ nav#menu.home-top {
     }
 
     .disciplines h2 {
-		/*#SC*/
-        padding: 0;
-		/*#SC*/
-        color: #bad532;
-		position: relative;
-		z-index: 17;
+        padding: 18px 0;
+        color: #000;
     }
 
     .btn-all {
@@ -1732,16 +1695,9 @@ nav#menu.home-top {
 
     .referalls {
         padding: 0 0 32px;
-        /*background: #30343c;*/
-        color: #fff;
-    }
-	
-    .container-disciplines {
-        padding: 0 0 32px;
         background: #30343c;
         color: #fff;
-		z-index: 16;		
-    }	
+    }
 
     .referalls h2 {
       line-height: 1.3;
@@ -1755,19 +1711,15 @@ nav#menu.home-top {
 
     .referalls img {
         float: right;
-        height: 46px;
+        height: 23px;
         width: auto;
         margin: 7px 0;
     }
 
     .referalls .bx-pager {
-		/*#SC*/
-        position: relative;
-        /*bottom: 19px;*/
-        /*right: 0;*/
-		display: block;
-		margin: 0 auto;
-		width: 150px;
+        position: absolute;
+        bottom: 19px;
+        right: 0;
     }
 
     .referalls .bx-pager div {
@@ -1789,11 +1741,17 @@ nav#menu.home-top {
         opacity: 1;
     }
 
+    .referalls .slider {
+        position: relative;
+        margin-left: -67px;
+        overflow: hidden;
+    }
+
     .referalls blockquote:before {
         position: absolute;
         top: 0;
         left: 0;
-        /*background: url(../1-7-2-2/img/bg_quote.png) no-repeat;*/
+        background: url(../1-7-2-2/img/bg_quote.png) no-repeat;
         background-size: contain;
         width: 93px;
         height: 67px;
@@ -1807,8 +1765,7 @@ nav#menu.home-top {
         position: relative;
         font-weight: 300;
         padding: 0;
-		/*#SC*/
-        margin: 53px 0 48px 67px;
+        margin: 83px 0 48px 67px;
     }
 
     .referalls blockquote cite {
@@ -1906,10 +1863,8 @@ nav#menu.home-top {
     }
     @media screen and (min-width: 1025px){
       .team.view-all .bx-viewport .item {
-			
-          /*width: 195px !important;*/
+          width: 195px !important;
           margin-right: 5px !important;
-		  
       }
       /* #SC 
         - blog list paragraph
@@ -1922,7 +1877,7 @@ nav#menu.home-top {
     }
     @media screen and (min-width: 1640px){
       .team.view-all .bx-viewport .item {
-          /*width: 250px !important;*/
+          width: 250px !important;
           margin-right: 10px !important;
       }
     }
@@ -1944,7 +1899,7 @@ nav#menu.home-top {
     }
 
     .team .moving {
-        padding: 24px 0 20px;
+        padding: 24px 22px 20px;
         background: #fff;
         border-top: 1px solid #dfdfdf;
         position: absolute;
@@ -1974,8 +1929,8 @@ nav#menu.home-top {
     }
     .team .entry {
         font-size: 10px;
-        line-height: 15px;
-        letter-spacing: 0;
+        line-height: 17px;
+        letter-spacing: 1px;
         color: #5b5f66;
     }
 
@@ -2067,15 +2022,16 @@ nav#menu.home-top {
         -moz-transition: all .2s ease;
         transition: all .2s ease;
         opacity: .85;
-        -webkit-filter: grayscale(10%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-        filter: grayscale(10%);
-        
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        filter: gray;
+        filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
     }
 
     .clients .item a:hover img {
         opacity: 1;
+        filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
         -webkit-filter: grayscale(0%);
-        filter: grayscale(0%);
     }
 
     .clients .item img {
@@ -2094,12 +2050,11 @@ nav#menu.home-top {
     .parallax-holder {
       /* display: none; */
         position: absolute;
-        bottom: -50px;
-        left: -90px;
+        bottom: -55px;
+        left: 0;
         width: 695px;
         height: 642px;
         overflow: hidden;
-		z-index: 17;		
     }
 
     .parallax-holder .mask {
@@ -2971,7 +2926,7 @@ nav#menu.home-top {
 
 .body-blog {    
     background-size: 100% 383px;
-    padding: 13px 0;
+    padding: 65px 0;
     position: relative;
 }
 
@@ -3500,16 +3455,13 @@ nav#menu.home-top {
 }
 
 .blog-posts .image {
-	/*#SC*/
-    /*padding-bottom: 15px;*/
+    padding-bottom: 15px;
 }
 .case_post .blog-posts {
     display: flex;
     padding: 0 0 20px;
-    flex-wrap: wrap;	
-    background-color: #bad532;
+    flex-wrap: wrap;
 }
-
 /* .blog-posts article.case_post {
     display: flex;
     flex-direction: column;
@@ -3529,32 +3481,24 @@ nav#menu.home-top {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-	/*#SC*/
-    /*background: rgba(255,255,255,.25);*/
-	/*#SC*/
-    width: 33%;
-	/*#SC*/
-    height: 8rem;
+    background: rgba(255,255,255,.25);
+    width: 50%;
+    height: 20rem;
     margin: 0;
     padding: 0;
     overflow: hidden;
     vertical-align: text-top;
-	/*#SC*/
-    /*border: 1px solid#efefef;*/
+    border: 1px solid#efefef;
 }
 .blog-posts article.case_post:hover {
-	/*#SC*/
-    /*background: rgba(186, 213, 50, 0.8);*/
+    background: rgba(186, 213, 50, 0.8);
     border: 1px solid#efefef;
 }
 .blog-posts article.case_post .image {
     width: 65%;
-	/*#SC*/
-    /*height: 100px;*/
-	/*#SC*/
-    /*padding-bottom: 15px;*/
-	/*#SC*/
-    /*margin-bottom: 20px;*/
+    height: 100px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
 }
 .blog-posts article.case_post h2 {
     color: #212121;
@@ -4417,8 +4361,7 @@ div.search input {
         text-transform: uppercase;
         font-weight: 900;
         display: block;
-		/*#SC*/
-        /*color: #777;*/
+        color: #777;
         margin: -36px 0 0;
         letter-spacing: 2.7px;
     }
@@ -4426,8 +4369,7 @@ div.search input {
         margin-top: 16px;
     }
     .disciplines h3 {
-		/*#SC*/
-        /*color: #212121;*/
+        color: #212121;
         font-family: "Roboto";
         margin: 39px 0 0;
         font-size: 14px;
@@ -4450,9 +4392,8 @@ div.search input {
         width: auto;
     }
     .disciplines h2 {
-        padding: 0px 10px;
-		/*#SC*/
-        color: #bad532;
+        padding: 27px 0;
+        color: #000;
     }
     .recent-works {
         padding-bottom: 78px;
@@ -4471,8 +4412,8 @@ div.search input {
         text-transform: uppercase;
     }
     .disciplines .more-text p {
-        font-size: 13px;
-        line-height: 16px;
+        font-size: 14px;
+        line-height: 20px;
     }
     .disciplines p {
         font-size: 14px;
@@ -4577,8 +4518,7 @@ div.search input {
     .about-section {
         background-size: cover;
         position: relative;
-		/*SC*/
-        /*padding-bottom: 80px;*/
+        padding-bottom: 80px;
     }
     .about-section:before {
         background-size: cover;
@@ -4767,12 +4707,6 @@ div.search input {
     .container {
         width: 1600px;
     }
-	
-	/*#SC*/
-	.case_post .container {
-        width: 1068px;
-    }
-	
     body {
         padding-top: 79px;
     }
@@ -5074,7 +5008,7 @@ div.search input {
         height: auto;
     }
     .body-blog {
-        padding-top: 36px;
+        padding-top: 98px;
     }
     div.search {
         max-width: 262px;
@@ -5461,16 +5395,6 @@ div.search input {
         letter-spacing: 8px;
         padding: 22px 0 32px;
     }
-    /*#SC*/
-    .case_post h1{
-    font-size: 28px !important;
-    }
-	
-	/*#SC*/
-    article.case_post{
-         /*height: 14rem !important;*/
-    }
-
     .works-header p {
         font-size: 14px;
         letter-spacing: 4.5px;
@@ -5663,22 +5587,19 @@ div.search input {
         max-width: none !important;
     }
     .referalls .item {
-        /*width: 650px !important;*/
+        width: 650px !important;
         float: left;
     }
     .referalls img {
         float: right;
-        height: 72px;
+        height: 36px;
         width: auto;
         margin: 8px 0;
     }
-	
-	/*#SC*/
     .referalls .bx-pager {
-        position: relative;
-		width: 220px;		
-        /*bottom: 0;
-        right: 0;*/
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
     .referalls .bx-pager div {
         float: left;
@@ -5691,13 +5612,10 @@ div.search input {
         width: 20px;
         height: 4px;
     }
-	/*#SC*/
     .referalls .slider {
         position: relative;
-        /*margin-left: -100px;*/
+        margin-left: -100px;
         overflow: hidden;
-		width: 600px;
-		float: right;
     }
     .referalls blockquote:before {
         position: absolute;
@@ -5719,8 +5637,7 @@ div.search input {
         position: relative;
         font-weight: 300;
         padding: 0;
-		/*#SC*/
-        margin: 98px 0 48px 0;
+        margin: 124px 0 48px 100px;
     }
     .referalls blockquote cite {
         font-weight: normal;
@@ -5788,8 +5705,8 @@ div.search input {
         padding-top: 36px;
     }
     .team .entry {
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 15px;
+        line-height: 26px;
     }
     .team .btn-all:after {
         content: "";
@@ -5805,7 +5722,7 @@ div.search input {
         padding: 15px 0;
     }
     .team .moving {
-        padding: 34px 0 0;
+        padding: 34px 22px 0;
         background: #fff;
         border-top: 1px solid #dfdfdf;
         position: absolute;
@@ -6043,10 +5960,7 @@ div.search input {
         -ms-transform: scale(.8);
         -webkit-transform: scale(.8);
         transform: scale(.8);
-		/*#SC*/
-        left: -90px;
-		/*#SC*/
-		bottom: -110px;
+        left: -70px;
     }
     .entry .gallery.gallery-columns-4 {
         margin: 20px 0 20px -10px !important;
@@ -6084,21 +5998,7 @@ div.search input {
     }
 }
 
-@media screen and (max-width: 1115px) {			
-
-	/*#SC*/
-	#x-image{
-		min-height: 590px !important;
-		background-repeat: no-repeat !important;
-		background-size: cover !important;		
-	}
-
-	/*#SC*/
-	#about .referalls .item blockquote h4 {
-		font-size: 46px !important;
-		margin-bottom: 15px !important;
-	}
-		
+@media screen and (max-width: 1115px) {
     .slogan-mas img {
         width: 273px;
         margin: -2px 0 0 -56px;
@@ -6167,20 +6067,15 @@ div.search input {
     }
     .about-section .cols {
         width: 100%;
-        padding-left: 0;
+        padding-left: 30px;
         padding-right: 30px;
     }
-	/*#SC*/
     .about-section h3 {
         /*letter-spacing: 3.5px;*/
         font-size: 30px;
-        line-height: 40px;
-    }
-    #about .title p{
-        line-height: 25px;
     }
     .about-section p {
-        font-size: 10px !important;
+        font-size: 16px;
         line-height: 20px;
     }
 	/*#SC*/
@@ -6191,20 +6086,12 @@ div.search input {
     }
     .referalls {
         padding-bottom: 10px;
-		width: 100%;
-    }
-	
-	/*#SC*/
-	#about .title{
-        padding-top: 20px;        
     }
     .referalls blockquote {
-		/*#SC*/
-        margin-top: -20px;
+        margin-top: 45px;
         margin-left: 50px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         padding-right: 3px;
-        overflow: hidden;
     }
     .clients .items {
         margin: 0 -20px;
@@ -6221,12 +6108,8 @@ div.search input {
     .container {
         width: auto;
         padding: 0 15px;
-    }	
-	
-    /*#SC*/
-    .case_post .container {
-        background-color: #bad532;
     }
+
     .home-featured .play a {
         margin-right: 5px;
     }
@@ -6362,33 +6245,24 @@ div.search input {
     .recent-awards {
         padding: 30px 0 10px;
     }
-	/*#SC*/
-    .title {        
+    .title {
+        float: none;
         width: auto;
         padding-bottom: 20px;
-		padding-right: 0 !important;
     }
-	
-	/*#SC*/
-    .disciplines .title , .clients .title, .team .title, .recent-awards .title{        
-		float: none;
-        width: auto;
-        padding-bottom: 20px;		
-    }	
-		
     .cols {
         margin-left: 0
     }
     .referalls .slider {
         margin: 0 0 0 -20px;
-        width: 40vw;
+        width: auto;
     }
     .referalls blockquote {
         font-size: 9px;
         line-height: 16px;
     }
     .referalls img {
-        height: 30px;
+        height: 15px;
     }
     .referalls h2 {
         padding: 30px 0 0;
@@ -6437,111 +6311,8 @@ div.search input {
     }
 }
 
-@media only screen and (max-width : 767px)  and (orientation: landscape) {
-	/*#SC*/
-	.referalls .slider{
-		height: 550px !important;		
-	}    			
-	
-	/*#SC*/
-	#about .container{
-		bottom: -210px !important;		
-	}    		
-	
-	/*#SC*/
-	.about-section {
-		min-height: 750px !important;		
-	}	
-}
-
-
 @media screen and (max-width: 767px) {
 
-	/*#SC*/
-	.referalls .slider {        
-        width: auto;
-    }
-
-	/*#SC*/
-	.referalls img {
-		-webkit-filter: grayscale(100%) brightness(60%) contrast(10000000%) !important;
-	   -moz-filter: grayscale(100%) brightness(60%) contrast(10000000%) !important;
-	   filter:  grayscale(100%) brightness(0%) contrast(10000000%) !important; 
-	}
-
-	/*#SC*/
-	.bx-has-pager{
-		position:relative;
-		bottom: 20px;
-	}
-
-
-	/*#SC*/
-	#galaxy-image{
-		height: 65vw !important;
-	}
-
-	/*#SC*/
-	#x-image{
-		background-color: #eee !important;
-		background-image: none !important;
-	}
-	
-	/*#SC*/
-	#about .container{
-		position: absolute !important;
-		bottom: -145px !important;
-	}
-	
-	/*#SC*/
-	.parallax-group .parallax-container{
-		position: relative !important;	
-	}	
-
-    .referalls .bx-pager a.active {
-        background: #30343c;
-        opacity: 1;
-    }
-
-	/*#SC*/
-	#about .referalls .item blockquote h4{
-		font-size: 46px !important;
-	}
-
-
-	/*#SC*/
-	#about .referalls .item blockquote h4{
-		font-size: 40px !important;
-		color: #30343C !important;
-	}
-	 
-	 /*#SC*/
-	#about .title  h3, #about .title  p { 
-		text-align:center;
-	}
-
-	/*#SC*/
-	#about .title {
-		width: 85vw;
-		padding-top: 0;
-		margin: 0 auto;
-		padding-right: 0;		
-		float: none;
-    }
-	
-	/*#SC*/
-	.about-section h3{
-		line-height: 42px; 		
-		padding: 0 !important;		
-    }
-	
-	/*#SC*/
-	#about .title p{
-		line-height: 18px; 		
-		color: #fff;		
-    }
-	
-		
     /*#SC*/
     .team .items .item {
     width: 100%;
@@ -6720,7 +6491,7 @@ div.search input {
         border-bottom: 0;
     }
     .body-blog {
-        padding: 13px 0;
+        padding: 20px 0;
     }
     .sidebar {
         float: none;
@@ -6756,21 +6527,15 @@ div.search input {
         left: -27%;
     }
     .about-section .container {
-		/*#SC*/
-        /*padding-bottom: 20px;*/		
-		padding: 0 !important;
-		/*#SC*/
-		/*background-color: #bad532;*/		
-		min-height: 770px;
+        padding-bottom: 20px;
     }
-    .about-section .cols {        
-		padding: 0!important;
-		margin: 0 !important;
-		
+    .about-section .cols {
+
+        background-size: 33px;
+        padding-top: 78px;
     }
     .about-section .cols h3 {
-		/*#SC*/
-        font-size: 32px;
+        font-size: 24px;
     }	
 	/*#SC*/
 	.blog-posts h2 a{
@@ -6781,28 +6546,9 @@ div.search input {
 		font-size: 10px;
 	}	
     .about-section .cols p {
-		/*#SC*/
-        font-size: 12pt !important;        
-		line-height: auto;
+        font-size: 15px;
+        line-height: 20px;
     }
-	
-	.about-section .slider p {
-		/*#SC*/
-        color:#30343C !important;
-    }
-	
-	.referalls blockquote cite {
-    	/*#SC*/
-        color:#30343C !important;
-	}
-		
-	.referalls .bx-pager a {
-		/*#SC*/
-		opacity: .7;
-		/*#SC*/
-		background: #bad532;	
-	}
-	
 	/*#SC*/
 	.blog-posts .entry {
 		font-size: 15px;
@@ -6840,8 +6586,8 @@ div.search input {
         padding-top: 15px;
     }
     .disciplines p {
-        line-height: 10px;
-        font-size: 8pt !important;
+        line-height: 13px;
+        font-size: 9pt;
         letter-spacing: 0;
     }
     .disciplines p a {
@@ -6854,7 +6600,6 @@ div.search input {
         width: 50% !important;
         overflow: hidden;
         float: left;
-		padding-left: 10px;
     }
     .disciplines .col:nth-child(3) {
         clear: both;
@@ -7049,16 +6794,8 @@ div.search input {
     .referalls .slider, .referalls blockquote {
         margin: 0;
     }
-	
-	.referalls .slider{
-		/*#SC*/
-        /*background-color: #bad532;*/
-		background-color: #eeeeee;
-    }
-	
     .referalls blockquote {
-        margin: 0 10px 20px;
-		
+        margin-bottom: 20px;
     }
     .referalls blockquote p {
         min-height: 0;
@@ -7317,11 +7054,8 @@ div.search input {
   .blog-posts article.case_post .image {
     width: 55%;
     height: auto;
-	/*#SC*/
-	/*
     padding-bottom: 15px;
     margin-bottom: 20px;
-	*/
     text-align: center;
   }
   .blog-posts article.case_post .text {
@@ -7360,159 +7094,12 @@ div.search input {
     }
 }
 
-@media screen and (min-width:320px) and (max-width: 340px){   
-  /*#SC*/
-  .about-section .referalls h3{ 
-	padding: 0;
-	font-size: 18px !important;
-	line-height: 18px !important;
-  }
-  /*#SC*/
-  .about-section .referalls p{ 	
-	font-size: 9pt !important;
-  }
-  
-  /*#SC*/
-  #about .title{ 	
-	margin-top: 0 !important;
-	max-width: 280px;
-  }
-}
-
-@media screen and (min-width:340px) and (max-width: 380px){   
-  /*#SC*/
-  .about-section .referalls h3{ 
-	padding: 10px !important;
-	font-size: 18px !important;
-	line-height: 22px !important;
-  }
-  
-  .about-section .referalls p{ 	
-	font-size: 9pt !important;
-  }
-  
-  /*#SC*/
-  #about .title{ 	
-	margin-top: 0 !important;
-	max-width: 288px;
-  }
-}
-
-@media screen and (min-width:380px) and (max-width: 440px){   
-  /*#SC*/
-  .about-section .referalls h3{ 
-	padding: 20px !important;	
-	font-size: 26px !important;
-	line-height: 22px !important;
-  }
-  
-    /*#SC*/
-  .about-section .referalls p{ 	
-	font-size: 10pt !important;
-  }
-  
-  /*#SC*/
-  #about .title{ 	
-	margin-top: 0 !important;
-	max-width: 400px;
-  }
-
-   /*#SC*/
-  .about-section { 	
-	min-height: 650px !important;
-  }
-  
-   /*#SC*/
-  #about .container { 	
-	bottom: -125px !important;
-  }
-  
-  
-}
-
-@media screen and (min-width:440px) and (max-width: 490px){   
-  /*#SC*/
-  .about-section .referalls h3{ 
-	padding: 10px !important;	
-	padding-top:34px !important;	
-	font-size: 26px !important;
-	line-height: 35px !important;
-  }
-  
-    /*#SC*/
-  .about-section .referalls p{ 	
-	font-size: 10pt !important;
-  }
-  
-  /*#SC*/
-  #about .title{ 	
-	margin-top: 0 !important;
-	max-width: 365px;
-  }  
-  	
-	   /*#SC*/
-	  #about .container { 	
-		bottom: -125px !important;
-	  }  
-}
-
-@media screen and (min-width:490px) and (max-width: 570px){   
-  /*#SC*/
-  .about-section .referalls h3{ 
-	padding-top:35px !important;	
-  }
-       
-  /*#SC*/
-  #about .title{ 	
-	margin-top: 0 !important;
-	min-height: 300px;
-  }  
-    
-   /*#SC*/
-  #about .container { 	
-	min-height: 860px !important;
-  }  
-  
-   /*#SC*/
-  .about-section { 	
-	min-height: 760px !important;
-  }
- 
-}
-
-@media screen and (min-width:570px) and (max-width: 767px){   
-  /*#SC*/
-  .about-section .referalls h3{ 
-	padding-top:75px !important;	
-  }
-       
-  /*#SC*/
-  #about .title{ 	
-	margin-top: 0 !important;
-	max-width: 480px;
-	min-height: 350px;
-	float: none !important;
-  }  
-  
-   /*#SC*/
-  #about .container { 	
-	min-height: 895px !important;
-  }  
-  
-   /*#SC*/
-  .about-section { 	
-	min-height: 775px !important;
-  }  
-  
-}
-
 @media screen and (min-width:320px) and (max-width: 380px){
  /*#SC*/
   .home-featured { 
 	min-height: 180px;
-  }  
+  }
 }
-
 @media screen and (min-width:530px) and (max-width: 767px){
   /*#SC*/
   .home-featured { 
@@ -7526,267 +7113,13 @@ div.search input {
   }  
 }
 
-@media screen and (min-width:767px) and (max-width: 930px){
-	/*#SC*/
-	#about .slider p {
-		font-size: 10px !important;
-	}	
-	
-	/*#SC*/
-	.about-section .container {		
-		min-height: 430px;
-	}
-
-	/*#SC*/
-	.referalls  {		
-		padding-bottom: 5px;
-	}
-	
-	/*#SC*/
-	.referalls blockquote {		
-		margin: 45px auto 10 px !important;
-		padding-right: 0 !important;
-	}	
-	
-	/*#SC*/
-	#about .title p {
-		max-width: 320px !important;
-	}	
-	
-	/*#SC*/
-	#about .container {
-		background-size: cover !important;
-	}
-
-	/*#SC*/
-	#about h3 {
-		max-width: 245px !important;
-	}			
-}
-
-
-@media screen and (min-width:930px) and (max-width: 1115px){
-	/*#SC*/
-	.about-section .container {		
-		min-height: 480px;
-	}
-	
-	/*#SC*/
-	#about .container{		
-		background-position: center !important;
-		background-size: cover !important;
-	}
-	
-	/*#SC*/
-	#about p{		
-		font-size: 16px !important;
-	}
-	
-	/*#SC*/
-	#about h3{		
-		font-size: 34px !important;
-	}
-	
-	/*#SC*/
-	#about h4{		
-		font-size: 60px !important;
-	}		
-}
-
-@media screen and (min-width:1115px){
-
-	#about .title{		
-		padding-top: 50px !important;
-	}	
-
-	/*#SC*/
-	#about h3{		
-		font-size: 3vw !important;	
-		max-width: 70% !important;
-	}	
-	
-	/*#SC*/
-	#about p{		
-		font-size: 1.2vw !important;		
-	}			
-	
-	/*#SC*/
-	#about h4{		
-		font-size: 4vw !important;
-		overflow: hidden !important;
-	}		
-	
-	/*#SC*/
-	#about .title{		
-		padding-right: 0 !important;
-		max-width: 40% !important;
-	}
-	
-	/*#SC*/
-	#about .title p{				
-		line-height: 34px !important;
-	}	
-
-	/*#SC*/
-	#about .container{				
-		background-size: cover !important;
-		background-position: center !important;
-		width: 100%;
-		padding: 0 15px;
-	}
-	
-	/*#SC*/
-	.referrals blockquote {				
-		margin-left: 0 !important;	
-	}
-	
-	/*#SC*/
-	#about .bx-has-pager{						
-		margin-left: 67px !important;
-	}
-	
-	/*#SC*/
-	#about .slider{				
-		width: 45vw;
-		float:right;
-	}
-}
-
-@media screen and (min-width:1640px){
-
-	/*#SC*/
-	#about .title{						
-		padding-top: 83px !important;
-	}
-
-
-	/*#SC*/
-	#about .title p{						
-		max-width: 80% !important;
-	}
-
-	/*#SC*/
-	#about .container{				
-		background-size: cover !important;
-		background-position: center !important;
-		min-height: 800px;
-		padding: 0;
-	}
-
-	/*#SC*/
-	#about .bx-has-pager{						
-		margin-left: 0 !important;
-	}
-	
-	/*#SC*/
-	#about .slider{				
-		width: 38vw;
-		float:right;
-	}	
-	
-	#about p{						
-		line-height:30px;
-	}	
-}
-
-@media screen and (min-width:1970px){
-	/*#SC*/
-	#about .referalls .item blockquote h4{				
-		line-height: 4.5vw !important;
-	}
-	
-	/*#SC*/
-	#about .title{						
-		max-width:40% !important;
-	}
-	
-	/*#SC*/
-	#about .title p{						
-		max-width:80% !important;
-	}
-	
-	/*#SC*/
-	#about .title h3{						
-		max-width:85% !important;
-	}	
-	
-}
-
-@media screen and (min-width:2100px){
-	/*#SC*/
-	#about  h3{				
-		font-size: 3vw !important;
-		line-height: 3vw !important;		
-		max-width: 400px !important;		
-	}
-	
-	/*#SC*/
-	#about  .title{				
-		max-width: 850px !important;		
-	}
-	
-	/*#SC*/
-	#about  .title p{				
-		line-height: 42px !important;	
-	}
-	
-}
-
-@media screen and (min-width:3270px){
-
-	/*#SC*/
-	#about .title{						
-		padding-top: 110px !important;
-	}
-
-	/*#SC*/
-	#about h3{		
-		font-size: 3vw !important;		
-	}	
-	
-	/*#SC*/
-	#about p{		
-		font-size: 0.75vw !important;			
-	}
-	
-	/*#SC*/
-	#about .slider p{		
-		margin-top: -20px !important;		
-		line-height: 1vw !important;		
-	}		
-	
-	/*#SC*/
-	#about h4{		
-		font-size: 2vw !important;
-		overflow: hidden !important;
-	}		
-
-	#about .title {
-		padding-right: 0 !important;
-		max-width: 800px !important;
-	}	
-	
-	#about .container {
-		background-size: cover !important;
-		background-position: center !important;
-		min-height: 1050px;
-	}	
-	
-	/*#SC*/
-	#about .title p{						
-		max-width:100% !important;
-	}	
-
-}
-
 @media screen and (min-width:420px) and (max-width: 770px){
   .blog-posts article.case_post {
     width: 50%;
     height: 15rem;
   }
   .blog-posts article.case_post .image {
-	/*#SC*/
-    /*height: 75px;*/
+    height: 75px;
   }  
 }
 
@@ -8301,55 +7634,4 @@ a .selectorText {
     width: 1068px;
     margin: 0 auto;
   }
-}
-
-/* Referrals */
-#about .referalls .item blockquote h4{
-    font-size: 60px;
-    color: #fff;
-    margin-bottom: 30px;
-    line-height: 80px;
-    margin-top: 31px;
-	white-space: nowrap;
-	font-weight: bold;
-}
-#about .referalls .item blockquote p{
-    font-size: 15px;
-    color: #fff;
-}
-
-#x-image{
-    background-position: center;
-}
-
-
-/*SECTION CASES*/
-
-/*#SC*/
-.case_post {
-	background: #bad532 !important;
-}
-
-/*#SC*/
-.case_post h1{
-    font-size: 19px;
-    letter-spacing: 8px;
-    padding: 22px 0 0px;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    background-color: #bad532;
-}
-
-/*#SC*/
-.case_post  img{
-	-webkit-filter:  grayscale(100%) brightness(60%) contrast(10000000%);
-   -moz-filter: grayscale(100%) brightness(60%) contrast(10000000%);
-   filter:  grayscale(100%) brightness(0%) contrast(10000000%); 
-}
-
-/*#SC*/
-.case_post  img:hover{
-	-webkit-filter: grayscale(0%);
-   -moz-filter: grayscale(0%);
-   filter: grayscale(0%);
 }

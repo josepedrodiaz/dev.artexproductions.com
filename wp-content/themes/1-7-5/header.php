@@ -29,48 +29,10 @@
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	
-	<?php
-	if (is_front_page()){
-	?>
-		<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-		<script type='text/javascript' src='https://dev.artexproductions.com/wp-content/themes/1-7-5/js/lulu-parallax.js'></script>
-		<link href="https://dev.artexproductions.com/wp-content/themes/1-7-5/css/lulu-parallax.css" type="text/css" rel="stylesheet" />											
-
-		<script>			
-			$(document).ready(function() {	
-				luluParallax();
-				if ($(window).width()>=767)
-					$("#about .slider").css("display","block");
-			});
-			
-			/*
-			 * When a user resizes the browser or changes the orientation of their device
-			 * https://css-tricks.com/snippets/jquery/done-resizing-event/
-			 */
-			 
-			
-			var resizeTimer;
-			$(window).on('resize', function(e) {
-			  clearTimeout(resizeTimer);
-			  resizeTimer = setTimeout(function() {
-				luluParallax(); // Fire the plugin again
-				//location.reload(true); // Reload the page
-				if ($(window).width()>=767)
-					$("#about .slider").css("display","block");
-			  }, 400);
-			});
-			
-		</script>		
-			
-	<?php
-	}
-	?>
-			
 	<?php
 	// do not remove
 	wp_head();
-	?>	
+	?>
 </head>
 <body <?php body_class(); ?>>
 
@@ -166,10 +128,9 @@ $(window).load(function() {
 
             </div>			
 			<video id="home-video" width="1920" height="1000" autoplay="autoplay" playsinline="true" muted loop>
-			  <source src="" type="video/mp4">
+			  <source src="<?php the_field("background_video") ?>" type="video/mp4">
 			</video>
-			<script>			
-			
+			<script>
 			var vid=document.getElementById('home-video');
 vid.addEventListener("loadstart", showVideo, false);
 function showVideo(e) {
@@ -265,7 +226,3 @@ function showVideo(e) {
 	<?php
 };
 ?>
-<script>
-			var videoDesktop = "<?php echo the_field("background_video") ?>";
-			var videoMobile = "<?php echo the_field("background_video_mobile") ?>";
-</script>

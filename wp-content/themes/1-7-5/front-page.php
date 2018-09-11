@@ -14,64 +14,18 @@ get_header();
 $para= get_field('parallax_image');
 $para= wp_get_attachment_image_src( $para, "bgpara" );
 ?>
-	
-	<div class="about-section parallax-group" id="about">
-		
-		<div class="parallax-container background against" data-rate="1" id="galaxy-image" style="background-image:url(<?php the_field("background_image_for_multilayer_parallax") ?>);height:100vw;">
-		</div>
-				
-		<div id="x-image" class="parallax-container foreground with" data-rate=".5" style="background-image:url(<?php the_field("front_image_for_multilayer_parallax") ?>);height:50vw">
-		</div>
-			
-		<div class="container parallax-container foreground with" data-rate=".25">		
+
+
+	<div class="about-section" id="about">
+		<div class="container">
 			<div class="cols">
-				<?php //the_field("about_content") ?>
-					<div class="referalls">
-					<div class="title">
-						<?php the_field("about_content") ?>
-					</div>
-						
-						
-						<div class="slider">
-							<div class="items">
-
-								<?php
-								  $temp = $wp_query;
-								  $wp_query = null;
-								  $wp_query = new WP_Query();
-								  $wp_query->query('posts_per_page=-1&post_type=referral');
-									?>
-									<?php if ($wp_query->have_posts()) : ?>
-									<?php $i = 1; while ( $wp_query->have_posts() && $i < 7) : $wp_query->the_post(); ?>
-
-															<div class="item">
-																<blockquote>																	
-																	<h4><sup>&#34;</sup><?php the_field("title") ?><sup>&#34;</sup></h4>
-																	<?php the_content(); ?>
-																	<?php the_post_thumbnail("referral"); ?>
-																	<cite>- <?php the_title(); ?> <span><?php echo get_the_excerpt(); ?></span></cite>
-																</blockquote>
-															</div>
-
-								<?php $i++; endwhile; ?>
-								<?php endif; ?>
-
-								<?php
-								  $wp_query = null;
-								  $wp_query = $temp;  // Reset
-								?>
-
-								<?php wp_reset_query(); ?>							
-							</div>
-						</div>	
-						
-						
-			</div>	
+				<?php the_field("about_content") ?>
+<!-- <div class="h-works" style="
+"><a href="#" class="down"></a>
+</div> -->
 			</div>
-		</div>		
+		</div>
 	</div>
-	
-		
 
 	<div class="body">
 		<div class="parallax-holder">
@@ -93,9 +47,8 @@ $para= wp_get_attachment_image_src( $para, "bgpara" );
 			}
 		</script>		
 		
-		<div class="container-disciplines">
 		<div class="container">
-			<div class="disciplines">			
+			<div class="disciplines">
 				<div class="title">
 					<h2>disciplines</h2>
 				</div>
@@ -120,7 +73,6 @@ $para= wp_get_attachment_image_src( $para, "bgpara" );
 				</div>
 <?php endif; ?>
 			</div>
-			</div>
 			<!-- <div class="recent-works">
 				<div class="title">
 					<h2>LATEST W0RKS</h2>
@@ -132,6 +84,72 @@ $para= wp_get_attachment_image_src( $para, "bgpara" );
 				</div>
 			</div> -->
 		</div>
+
+		<div class="referalls">
+			<div class="container">
+				<div class="title">
+					<h2>what clients are saying</h2>
+				</div>
+
+				<div class="cols">
+					<div class="slider">
+						<div class="items">
+
+							<?php
+							  $temp = $wp_query;
+							  $wp_query = null;
+							  $wp_query = new WP_Query();
+							  $wp_query->query('posts_per_page=-1&post_type=referral');
+								?>
+								<?php if ($wp_query->have_posts()) : ?>
+								<?php $i = 1; while ( $wp_query->have_posts() && $i < 7) : $wp_query->the_post(); ?>
+
+														<div class="item">
+															<blockquote>
+																<?php the_content(); ?>
+																<?php the_post_thumbnail("referral"); ?>
+																<cite>- <?php the_title(); ?> <span><?php echo get_the_excerpt(); ?></span></cite>
+															</blockquote>
+														</div>
+
+							<?php $i++; endwhile; ?>
+							<?php endif; ?>
+
+							<?php
+							  $wp_query = null;
+							  $wp_query = $temp;  // Reset
+							?>
+
+							<?php wp_reset_query(); ?>
+<?php
+  // $temp = $wp_query;
+  // $wp_query = null;
+  // $wp_query = new WP_Query();
+  // $wp_query->query('posts_per_page=-1&post_type=referral');
+	//
+  // while ($wp_query->have_posts()) : $wp_query->the_post();
+?>
+							<!-- <div class="item">
+								<blockquote>
+									<?php // the_content(); ?>
+									<?php // the_post_thumbnail("referral"); ?>
+									<cite>- <?php // the_title(); ?> <span><?php // echo get_the_excerpt(); ?></span></cite>
+								</blockquote>
+							</div> -->
+
+<?php // endwhile; ?>
+<?php
+//  $wp_query = null;
+// $wp_query = $temp;  // Reset
+?>
+
+<?php wp_reset_query(); ?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</div>
 
 	<div class="clients">
